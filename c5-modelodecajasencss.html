@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modelo de cajas en css</title>
+  <style>
+    body{
+      display: grid;
+      margin: 0;
+      padding: 0;
+      grid-template:
+      "header" 200px
+      "main"   800px
+      "footer" 100px
+      
+      ;
+    }
+    header{
+      grid-area: header;
+      background-color: aqua;
+    }
+     main{
+      grid-area: main;
+      background-color: aqua;
+    }
+     footer{
+      grid-area: footer;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+<header>
+  encabezado del sitio 
+</header>
+<main>
+  contenido del sitio 
+</main>
+<footer>
+  pie de pagina del sitio
+</footer>
+</body>
+</html>
