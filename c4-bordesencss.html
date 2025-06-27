@@ -10,6 +10,7 @@
         border-style: dotted;
         border-width: 5px;
         border-color: brown;
+      
       {
       & .tx2
          border-style: dashed;
@@ -66,7 +67,9 @@
     
 
       .s2{
-
+        border: solid 2px red;
+        outline: 3px blue;/*es equivalente al border*/
+        outline-offset: 3px;/*es equivalente al padding*/
         & .bx1{
           border: solid 2px red;
         }
@@ -81,7 +84,16 @@
       }
 
 
-
+/*
+al igual que border-style, tambien existe un borde fuera del margen que se puede estilizar 
+para seleccionarlo se utiliza el atributo "outline-style"
+al igual que border-style, outline-style utiliza los mismos valores para mostrar los estilos en el navegador.
+outline-style
+outline-color
+outline-width
+outline-offset (es el padding entre la linea de afuera y el margen)
+outline(utiliza los mismo valores que border)
+*/
   </style>
 
 </head>
@@ -104,7 +116,7 @@
 </section>
 
 <section class="s2">
-  <div class="bx1">box 1</div>
+  <div class="bx1">box 1</div><br>
   <div class="bx1"> box 2</div>
   <div class="bx1"> box 3</div>
   <div class="bx1"> box 4</div>
